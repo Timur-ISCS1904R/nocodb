@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: nocodb
+    env: node
+    plan: free
+    buildCommand: "pnpm install"
+    startCommand: "pnpm start"
+    envVars:
+      - key: NC_DB
+        value: "postgresql://postgres:6OeG*TfAFn|xHhY$@db.mujrwgdrdizmodmipglx.supabase.co:5432/postgres?ssl=true" 
